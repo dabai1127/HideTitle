@@ -12,6 +12,8 @@
 
 扩展只对普通网页生效；浏览器内部页面（例如 `chrome://extensions`）、扩展页面和部分受保护页面不能被浏览器扩展修改，这是浏览器的限制。
 
+![](https://github.com/dabai1127/HideTitle/blob/main/preview.png?raw=true)
+
 ## 工作方式
 
 扩展在页面开始加载时把 `document.title` 设置为零宽字符，并监听单页应用或网页脚本对标题的后续修改。网页的实际标题不会被保存或上传。
