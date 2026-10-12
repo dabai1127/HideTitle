@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "隐藏网页标题",
+  "version": "1.0.0",
+  "description": "隐藏所有普通网页标签页中的标题文字，同时保留网页图标。",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
